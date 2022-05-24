@@ -139,6 +139,7 @@ export function Sessions() {
               type="button"
               onClick={() => setDay("All")}
               className="btn-oval"
+              data-cy="AllSessions"
             >
               All Sessions
             </button>
@@ -146,6 +147,7 @@ export function Sessions() {
               type="button"
               onClick={() => setDay("Wednesday")}
               className="btn-oval"
+              data-cy="Wednesday"
             >
               Wednesday
             </button>
@@ -153,6 +155,7 @@ export function Sessions() {
               type="button"
               onClick={() => setDay("Thursday")}
               className="btn-oval"
+              data-cy="Thursday"
             >
               Thursday
             </button>
@@ -160,6 +163,7 @@ export function Sessions() {
               type="button"
               onClick={() => setDay("Friday")}
               className="btn-oval"
+              data-cy="Friday"
             >
               Friday
             </button>
