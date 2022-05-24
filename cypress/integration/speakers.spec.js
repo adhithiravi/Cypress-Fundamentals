@@ -32,8 +32,8 @@ describe("Speakers page", () => {
 
   it("should display all speaker information", () => {
     cy.wait("@fetchSpeakers");
-    cy.get("[data-cy=speakerName]").should("have.length", 1);
-    cy.get("[data-cy=bio]").should("have.length", 1);
-    cy.get("[data-cy=sessionList]").should("have.length", 1);
+    cy.dataCy("speakerName").should("have.length", 1);
+    cy.dataCy("bio").should("have.length", 1);
+    cy.dataCy("sessionList").should("have.length", 1);
   });
 });
