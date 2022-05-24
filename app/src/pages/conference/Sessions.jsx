@@ -38,8 +38,7 @@ function AllSessionList() {
 }
 
 function SessionList({ day }) {
-  if (day === "") day = "Wednesday";
-
+  if (day === "") day = "";
   // execute query and store response json
   const { loading, error, data } = useQuery(SESSIONS, {
     variables: { day },
@@ -139,6 +138,7 @@ export function Sessions() {
               type="button"
               onClick={() => setDay("All")}
               className="btn-oval"
+              data-cy="AllSessions"
             >
               All Sessions
             </button>
@@ -146,6 +146,7 @@ export function Sessions() {
               type="button"
               onClick={() => setDay("Wednesday")}
               className="btn-oval"
+              data-cy="Wednesday"
             >
               Wednesday
             </button>
@@ -153,6 +154,7 @@ export function Sessions() {
               type="button"
               onClick={() => setDay("Thursday")}
               className="btn-oval"
+              data-cy="Thursday"
             >
               Thursday
             </button>
@@ -160,6 +162,7 @@ export function Sessions() {
               type="button"
               onClick={() => setDay("Friday")}
               className="btn-oval"
+              data-cy="Friday"
             >
               Friday
             </button>
