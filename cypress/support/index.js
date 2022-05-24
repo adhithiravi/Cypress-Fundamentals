@@ -14,8 +14,7 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-/// <reference types="cypress" />
+import './commands'
 
-import "./commands";
-// in cypress/support/index.ts
-// load type definitions that come with Cypress module
+// Alternatively you can use CommonJS syntax:
+// require('./commands')

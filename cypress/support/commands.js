@@ -23,14 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-// Custom command to get an element using the data-cy attribute
-Cypress.Commands.add("dataCy", (value) => {
-  return cy.get(`[data-cy=${value}]`);
-});
-
-// Custom command to click on view sessions button on conference page
-Cypress.Commands.add("clickViewSessions", () => {
-  cy.visit("/conference");
-  cy.get("h1").contains("View Sessions").click();
-});

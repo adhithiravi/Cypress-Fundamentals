@@ -3,7 +3,8 @@
 describe("Submit sessions", () => {
   // Run before each test in this describe block
   beforeEach(() => {
-    cy.clickViewSessions();
+    cy.visit("/conference");
+    cy.get("h1").contains("View Sessions").click();
     cy.url().should("include", "/sessions");
     cy.get("a").contains("Submit a Session!").click();
   });
