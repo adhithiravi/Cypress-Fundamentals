@@ -3630,6 +3630,48 @@
       "level": "Intermediate",
       "day": "Thursday",
       "id": "814b1f5e-e6df-440b-a91c-df198b5bbed2"
+    },
+    {
+      "title": "New session title",
+      "description": "This is the greatest session",
+      "level": "Advanced",
+      "day": "Thursday",
+      "id": "abd64666-335e-4c6f-852a-21e6fde59228"
+    },
+    {
+      "title": "My odd new session",
+      "description": "My odd new session",
+      "level": "Intermediate",
+      "day": "Wednesday",
+      "id": "332165de-70ac-449b-abaa-7ec3f57ff90d"
+    },
+    {
+      "title": "one last session",
+      "description": "one last session",
+      "level": "Advanced",
+      "day": "Wednesday",
+      "id": "a5df789d-0051-4bcb-95e1-c8d04b3821c6"
+    },
+    {
+      "title": "New session title",
+      "description": "This is the greatest session",
+      "level": "Advanced",
+      "day": "Thursday",
+      "id": "35c7e9b0-1201-48bc-afbe-2c375f8648ab"
+    },
+    {
+      "title": "graphql",
+      "description": "graphql",
+      "level": "Advanced",
+      "day": "Wednesday",
+      "id": "1bfe2990-1acd-4c4c-bf35-70c6abd58974"
+    },
+    {
+      "title": "New session title",
+      "description": "This is the greatest session",
+      "level": "Advanced",
+      "day": "Thursday",
+      "id": "a504d905-130d-4097-9823-0cf735e3ce37"
     }
   ]
 }
