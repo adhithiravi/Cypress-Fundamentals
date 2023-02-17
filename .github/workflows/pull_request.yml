@@ -1,1 +1,24 @@
+name: Cypress Tests
 
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Install dependencies
+        run: npm install
+      - name: Run Cypress tests
+        run: npm run cypress:run --headed --browser chrome
+      - name: Upload test results
+        uses: EnzymeDev/upload-cypress-test-results@v1
+        with:
+          files: cypress/results/*.json
